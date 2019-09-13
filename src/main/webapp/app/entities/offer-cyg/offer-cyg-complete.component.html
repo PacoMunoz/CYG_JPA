@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="offer">
+            <h2><span jhiTranslate="cygApp.offer.detail.title">Offer</span> {{offer.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="cygApp.offer.name">Name</span></dt>
+                <dd>
+                    <span>{{offer.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="cygApp.option.home.title">Opciones</span></dt>
+                <dd *ngFor="let option of options">
+                    <span>{{option.name}}</span>
+                    <button type="button"
+                            [routerLink]="['/option-cyg', option.id, 'edit']"
+                            class="btn btn-sm btn-primary">
+                        <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+                    </button>
+                    <button type="submit"
+                            [routerLink]="['/offer-cyg', {  outlets: { popup: option.id + '/' + offer.id + '/deleteOp'} }]"
+                            replaceUrl="true"
+                            queryParamsHandling="merge"
+                            class="btn btn-danger btn-sm">
+                        <fa-icon [icon]="'times'"></fa-icon>
+                        <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                    </button>
+                </dd>
+            </dl>
+
+            <button type="button"
+                    [routerLink]="['/offer-cyg', offer.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

@@ -7,6 +7,8 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entidades",
+        "offerCyg": "Offer",
+        "optionCyg": "Option",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
@@ -48,7 +50,7 @@
     "messages": {
       "info": {
         "authenticated": {
-          "prefix": "Si desea ",
+          "prefix": "Si desea crear un regalo y sus opciones pulse",
           "link": "iniciar sesión",
           "suffix": ", puede intentar con las cuentas predeterminadas:<br/>- Administrador (usuario=\"admin\" y contraseña=\"admin\") <br/>- Usuario (usuario=\"user\" y contraseña=\"user\")."
         },

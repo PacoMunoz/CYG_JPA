@@ -1,0 +1,27 @@
+entity Offer {
+	name String required
+}
+
+entity Option {
+	name String required
+    description String
+    image1 ImageBlob maxbytes(30000)
+    image2 ImageBlob maxbytes(30000)
+    image3 ImageBlob maxbytes(30000)
+}
+
+relationship ManyToOne {
+	Option { offer } to Offer { options }
+}
+
+// Set pagination options
+paginate all with infinite-scroll
+
+// Set service options to all except few
+service all with serviceImpl
+// Set an angular suffix
+angularSuffix * with cyg
+
+filter Offer
+filter Option
+

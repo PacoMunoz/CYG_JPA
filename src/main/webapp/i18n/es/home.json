@@ -1,7 +1,7 @@
 {
   "home": {
-    "title": "¡Bienvenido, Java Hipster!",
-    "subtitle": "Esta es su página de inicio",
+    "title": "¡Bienvenido, Elige tu Regalo!",
+    "subtitle": "En esta página puedes crear varias opciones de un regalo para alguien, una vez creadas las opciones, se genera un link que puedes compartir con la persona a la que quieres hacer el regalo. La persona que recibe el link puede abrirlo y seleccionar entre las opciones de regalo la que mas le guste. Una vez elegido el recibiras una notificación con el regalo que ha seleccionado.",
     "logged": {
       "message": "Está conectado como \"{{username}}\"."
     },

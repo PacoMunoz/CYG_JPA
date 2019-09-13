@@ -1,0 +1,30 @@
+{
+    "name": "Offer",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "option",
+            "otherEntityRelationshipName": "offer",
+            "relationshipName": "options"
+        }
+    ],
+    "changelogDate": "20190908110855",
+    "entityTableName": "offer",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "angularJSSuffix": "cyg"
+}

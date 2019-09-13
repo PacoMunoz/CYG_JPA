@@ -1,0 +1,27 @@
+{
+  "cygApp": {
+    "option": {
+      "home": {
+        "title": "Opciones",
+        "createLabel": "Crear nuevo Option",
+        "createOrEditLabel": "Crear o editar Option",
+        "notFound": "No Options found"
+      },
+      "created": "Un nuevo Option ha sido creado con el identificador {{ param }}",
+      "updated": "Un Option ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Option ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Option {{ id }}?"
+      },
+      "detail": {
+        "title": "Option"
+      },
+      "name": "Name",
+      "description": "Description",
+      "image1": "Image 1",
+      "image2": "Image 2",
+      "image3": "Image 3",
+      "offer": "Offer"
+    }
+  }
+}
